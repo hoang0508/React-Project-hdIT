@@ -2,10 +2,8 @@
   &-container {
     .header-container {
       .navbar-nav {
-        .nav-link {
-          &.active {
-            color: aqua;
-          }
+        .active {
+          color: aqua;
         }
       }
     }

@@ -4,27 +4,25 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <Navbar bg="light" expand="lg">
       <Container>
-        <NavLink to="/" className="navbar-brand">
-          Hỏi dân IT
-        </NavLink>
+        <Navbar.Brand href="#home">Hỏi dân IT</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <NavLink to="/" className="nav-link">
+            <Link to="/" className="nav-link">
               Home
-            </NavLink>
-            <NavLink to="/users" className="nav-link">
+            </Link>
+            <Link to="/users" className="nav-link">
               Users
-            </NavLink>
-            <NavLink to="/admin" className="nav-link">
+            </Link>
+            <Link to="/admin" className="nav-link">
               Admin
-            </NavLink>
+            </Link>
           </Nav>
           <Nav>
             <NavDropdown title="Setting" id="basic-nav-dropdown">
