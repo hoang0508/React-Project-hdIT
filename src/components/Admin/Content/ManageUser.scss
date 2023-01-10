@@ -1,0 +1,18 @@
+.manage-user-container {
+}
+
+.modal-add-user {
+  .img-preview {
+    border: 1px dashed #ccc;
+    height: 150px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

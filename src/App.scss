@@ -1,6 +1,49 @@
+@media (min-width: 1200px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1280px !important;
+  }
+}
+
 .app {
   &-container {
     .header-container {
+      .btn {
+        &-auth {
+          display: flex;
+          align-items: center;
+          gap: 0 15px;
+        }
+        &-login {
+          border-radius: 5px;
+          border: 1px solid rgb(35, 27, 27);
+          background-color: transparent;
+          padding: 5px 15px;
+        }
+        &-signup {
+          border-radius: 5px;
+          border: 1px solid rgb(35, 27, 27);
+          background-color: #333;
+          color: #fff;
+          padding: 5px 15px;
+          transition: all 0.25s linear;
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+      .navbar {
+        padding-top: 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        background-color: rgba(0, 0, 0, 0) !important;
+      }
       .navbar-nav {
         .nav-link {
           &.active {
@@ -9,5 +52,42 @@
         }
       }
     }
+    .homepage-container {
+      .homepage-content {
+        padding: 100px;
+        position: relative;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .title-1 {
+          font-size: 35px;
+          font-weight: 600;
+        }
+        .title-2 {
+          font-size: 22px;
+        }
+        .title-3 {
+          button {
+            border-radius: 5px;
+            background-color: #333;
+            color: #fff;
+            padding: 5px 15px;
+            transition: all 0.25s linear;
+            border: none;
+            &:hover {
+              opacity: 0.8;
+            }
+          }
+        }
+      }
+    }
   }
+}
+
+video {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
 }

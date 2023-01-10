@@ -1,0 +1,16 @@
+.admin-container {
+  display: flex;
+  .admin-sidebar {
+    .pro-sidebar {
+      min-height: 100vh;
+    }
+  }
+
+  .admin-content {
+    .admin-header {
+    }
+
+    .admin-main {
+    }
+  }
+}
