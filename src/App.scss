@@ -37,7 +37,7 @@
       }
       .navbar {
         padding-top: 20px;
-        position: fixed;
+        // position: fixed;
         top: 0;
         left: 0;
         right: 0;
@@ -52,6 +52,10 @@
         }
       }
     }
+    // .main-container {
+    //   position: relative;
+    //   top: 70px;
+    // }
     .homepage-container {
       .homepage-content {
         padding: 100px;
